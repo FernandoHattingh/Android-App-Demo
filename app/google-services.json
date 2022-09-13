@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661821518929",
+    "project_id": "the-old-nerds-74cad",
+    "storage_bucket": "the-old-nerds-74cad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661821518929:android:2ae7eb6e3ae0af6dcff470",
+        "android_client_info": {
+          "package_name": "com.example.theoldnerds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661821518929-nkn2vh23ic61lsd3h438d1i6u9hqro25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtnw9KY5xtksyxh-aKtVkF1T8AEoBQTdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661821518929-nkn2vh23ic61lsd3h438d1i6u9hqro25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addComics">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="150dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVCat2">
+
+        <RadioButton
+            android:id="@+id/fictionalRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Fictional "></RadioButton>
+
+        <RadioButton
+            android:id="@+id/RealisticRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realistic "></RadioButton>
+
+        <RadioButton
+            android:id="@+id/OtherRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other ">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Add Comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtVCat2"
+        android:layout_width="275dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="160dp"
+        android:text="Category:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicDateOfAcq" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="177dp"
+        android:text="Add A Comic!"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVNAme2"
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Name:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtVNDate2"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Date Of Acquisition:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicDescription" />
+
+    <TextView
+        android:id="@+id/txtVDescrip2"
+        android:layout_width="161dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Description:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicName" />
+
+    <EditText
+        android:id="@+id/etComicDateOfAcq"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVNDate2" />
+
+    <EditText
+        android:id="@+id/etComicDescription"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVDescrip2" />
+
+    <EditText
+        android:id="@+id/etComicName"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVNAme2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

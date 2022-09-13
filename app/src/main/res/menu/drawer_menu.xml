@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_baseline_folder_24_collection"
+            android:title="Collection" />
+
+        <item
+            android:id="@+id/nav_Add_Item"
+            android:icon="@drawable/ic_baseline_library_add"
+            android:title="Add Item" />
+
+        <item
+            android:id="@+id/nav_Photo"
+            android:icon="@drawable/ic_baseline_add_a_photo"
+            android:title="Add Photo" />
+
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Settings"
+                android:icon="@drawable/ic_baseline_settings"
+                android:title="Settings" />
+        </menu>
+    </item>
+</menu>

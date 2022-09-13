@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/txtVCatUpdate"
+        android:layout_width="275dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="160dp"
+        android:text="Category:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicDateOfAcqUpdate" />
+
+    <Button
+        android:id="@+id/btnUpdateItem"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Update Comic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupUpdate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupUpdate"
+        android:layout_width="150dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVCatUpdate">
+
+        <RadioButton
+            android:id="@+id/fictionalRadioUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Fictional "></RadioButton>
+
+        <RadioButton
+            android:id="@+id/RealisticRadioUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realistic "></RadioButton>
+
+        <RadioButton
+            android:id="@+id/OtherRadioUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other ">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewActivityUpdate"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="177dp"
+        android:text="Update your Comic!"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVNAme2Up"
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Name:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewActivityUpdate" />
+
+    <TextView
+        android:id="@+id/txtVNDate2Up"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Date Of Acquisition:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicDescriptionUpdate" />
+
+    <TextView
+        android:id="@+id/txtVDescrip2Up"
+        android:layout_width="161dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="138dp"
+        android:text="Comic Description:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etComicNameUpadte" />
+
+    <EditText
+        android:id="@+id/etComicDateOfAcqUpdate"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVNDate2Up" />
+
+    <EditText
+        android:id="@+id/etComicDescriptionUpdate"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVDescrip2Up" />
+
+    <EditText
+        android:id="@+id/etComicNameUpadte"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVNAme2Up" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
